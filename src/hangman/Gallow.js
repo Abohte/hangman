@@ -17,7 +17,8 @@ const wonImage = require('../images/won.png')
 
 class Gallow extends PureComponent {
   static propTypes = {
-    wrongGuesses: PropTypes.number.isRequired
+    wrongGuesses: PropTypes.number.isRequired,
+    won: PropTypes.bool
   }
 
   render() {
