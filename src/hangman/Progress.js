@@ -1,8 +1,9 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 
-class NewGuess extends PureComponent {
+class Progress extends PureComponent {
   static propTypes = {
+    word: PropTypes.string.isRequired,
     guesses: PropTypes.arrayOf(PropTypes.string).isRequired
   }
 
@@ -14,4 +15,4 @@ class NewGuess extends PureComponent {
   }
 }
 
-export default NewGuess
+export default Progress

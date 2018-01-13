@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import hangman from './images/hangman.png'
 import './App.css';
+import Board from './containers/Board'
 
 class App extends Component {
   render() {
@@ -10,7 +11,7 @@ class App extends Component {
           <img src={hangman} className="logo" alt="logo" />
         </header>
         <main>
-      
+          <Board />
         </main>
       </div>
     );
