@@ -1,16 +1,16 @@
 import React, { PureComponent } from 'react'
-import PropTypes from 'prop-types'
 import Game from '../hangman/Game'
 import NewGuess from '../hangman/NewGuess'
+import './Board.css'
 
 const word = "jazz"
-const guesses = []
+const guesses = ["a", "b", "b", "b", "b", "b"]
 
 class Board extends PureComponent {
 
   render() {
     return(
-      <div>
+      <div className="box">
         <Game word={word} guesses={guesses} />
         <NewGuess guesses={guesses} />
       </div>

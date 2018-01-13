@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Gallow from './Gallow'
 import Progress from './Progress'
+import './Game.css'
 
 class Game extends PureComponent {
   static propTypes = {
@@ -58,7 +59,7 @@ class Game extends PureComponent {
 
   render() {
     return(
-      <div>
+      <div className="game">
         <Gallow wrongGuesses={this.wrongGuessCount(this.props.word, this.props.guesses)} />
         <Progress word={this.props.word} guesses={this.props.guesses} />
       </div>

@@ -1,11 +1,16 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
+import './Gallow.css';
 
 const images = [
-  require('../images/hangman/0.jpg'),
-  require('../images/hangman/1.jpg'),
-  require('../images/hangman/2.jpg'),
-  require('../images/hangman/3.jpg')
+  require('../images/0.png'),
+  require('../images/1.png'),
+  require('../images/2.png'),
+  require('../images/3.png'),
+  require('../images/4.png'),
+  require('../images/5.png'),
+  require('../images/6.png'),
+  require('../images/7.png')
 ]
 
 class Gallow extends PureComponent {
