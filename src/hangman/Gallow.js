@@ -13,16 +13,19 @@ const images = [
   require('../images/7.png')
 ]
 
+const wonImage = require('../images/won.png')
+
 class Gallow extends PureComponent {
   static propTypes = {
     wrongGuesses: PropTypes.number.isRequired
   }
 
   render() {
+    const image = this.props.won? wonImage : images[this.props.wrongGuesses]
     return(
       <div>
       <img
-        src={images[this.props.wrongGuesses]}
+        src={image}
         className="gallow"
         alt={`${this.props.wrongGuesses} incorrect`}
       />

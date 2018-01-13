@@ -1,22 +1,26 @@
 import React, { PureComponent } from 'react'
 import Game from '../hangman/Game'
-import NewGuess from '../hangman/NewGuess'
 import './Board.css'
+import { connect } from 'react-redux'
 
-const word = "jazz"
-const guesses = ["a", "b", "b", "b", "b", "b"]
+
 
 class Board extends PureComponent {
 
   render() {
     return(
-      <div className="box">
-        <Game word={word} guesses={guesses} />
-        <NewGuess guesses={guesses} />
+      <div>
+        <Game word={this.props.word} guesses={this.props.guesses} />
       </div>
     )
   }
 }
 // Todo: Win/lose
 
-export default Board
+
+const mapStateToProps = ({hangman}) => ({
+    word: hangman.word,
+    guesses: hangman.guesses
+  })
+
+export default connect(mapStateToProps)(Board)

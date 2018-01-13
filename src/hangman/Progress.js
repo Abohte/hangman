@@ -5,7 +5,8 @@ import './Progress.css'
 class Progress extends PureComponent {
   static propTypes = {
     word: PropTypes.string.isRequired,
-    guesses: PropTypes.arrayOf(PropTypes.string).isRequired
+    guesses: PropTypes.arrayOf(PropTypes.string).isRequired,
+    lost: PropTypes.bool
   }
 
   showGuess(word, guesses) {
@@ -21,9 +22,13 @@ class Progress extends PureComponent {
   }
 
   render() {
+    const progress = this.showGuess(this.props.word, this.props.guesses)
+
     return(
       <div>
-      <p>{this.showGuess(this.props.word, this.props.guesses)}</p>
+      <p className={this.props.lost? "lost" : null}>
+      {this.props.lost? this.props.word : progress}
+      </p>
       </div>
     )
   }

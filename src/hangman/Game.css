@@ -1,3 +1,9 @@
+.box {
+  display: flex;
+  align-items: flex-end;
+  padding: 50px;
+}
+
 .game {
   flex-grow: 1;
 }
