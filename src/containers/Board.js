@@ -3,8 +3,6 @@ import Game from '../hangman/Game'
 import './Board.css'
 import { connect } from 'react-redux'
 
-
-
 class Board extends PureComponent {
 
   render() {
@@ -15,8 +13,6 @@ class Board extends PureComponent {
     )
   }
 }
-// Todo: Win/lose
-
 
 const mapStateToProps = ({hangman}) => ({
     word: hangman.word,
