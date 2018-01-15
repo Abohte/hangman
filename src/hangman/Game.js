@@ -25,7 +25,7 @@ class Game extends PureComponent {
 
   render() {
     const wrongGuessCount = this.wrongGuessCount(this.props.word, this.props.guesses)
-    const lost = wrongGuessCount === 7
+    const lost = wrongGuessCount === 6
     const won = this.hasWon(this.props.word, this.props.guesses)
 
     return(

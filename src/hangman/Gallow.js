@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import './Gallow.css';
 
 const images = [
-  require('../images/0.png'),
   require('../images/1.png'),
   require('../images/2.png'),
   require('../images/3.png'),

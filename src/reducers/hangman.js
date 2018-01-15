@@ -1,6 +1,6 @@
 import { GUESS } from '../actions/hangman/guess'
 
-const words = [ "coding", "computer", "game", "playing", "gallows", "rope"]
+const words = [ "convict", "dangling", "noose", "playing", "gallows", "rope", "prisoner"]
 
 const initialState = {
   word: words[Math.floor(Math.random()*words.length)],
