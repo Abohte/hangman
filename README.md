@@ -1,4 +1,4 @@
-# Codaisseurify
+# Hangman
 
 Simple React app made following week 5 (first week of JS) of the 9-week Codaisseur Academy.
 
