@@ -4,6 +4,9 @@ Simple React app made following week 5 (first week of JS) of the 9-week Codaisse
 
 Assignment: create a hangman game in React/Redux, without database or backend.
 
+![Playing](src/images/Playing.png)
+![Artist Page](src/images/Lost.png)
+
 ## Steps
 
 While working on this app I followed these steps:
