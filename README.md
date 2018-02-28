@@ -1,6 +1,6 @@
-# Codaisseurify
+# Hangman
 
-Simple React app made following week 5 (first week of JS) of the 9-week Codaisseur Academy.
+React app made following week 5 (first week of JS) of the 9-week Codaisseur Academy.
 
 Assignment: create a hangman game in React/Redux, without database or backend.
 
